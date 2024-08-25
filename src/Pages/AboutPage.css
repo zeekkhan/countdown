@@ -1,0 +1,279 @@
+.about-page-container {
+  font-family: "Arial", sans-serif;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  margin-top: 200px;
+  background-color: #ffffff;
+}
+
+.about-section {
+  padding: 40px;
+  background: #f9f9f9;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+.features-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.features-image {
+  width: 85%;
+  max-width: 1000px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin: 20px 0;
+  list-style-type: none;
+}
+
+.features-list li {
+  background: #ecf0f1;
+  border-radius: 8px;
+  padding: 15px 20px;
+  font-size: 1rem;
+  color: #333;
+  width: calc(40% - 20px);
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.features-list li:hover {
+  background: #bdc3c7;
+  transform: scale(1.02);
+}
+
+.subscribe-section {
+  background: #eaf0f6;
+  padding: 40px;
+}
+
+.subscribe-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.subscribe-form input,
+.subscribe-form button {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.subscribe-form input {
+  border: 1px solid #ddd;
+  width: 100%;
+  max-width: 400px;
+}
+
+.subscribe-form button {
+  border: none;
+  background: #2c3e50;
+  color: #ffffff;
+  cursor: pointer;
+  width: 66%;
+}
+
+.subscribe-form button:hover {
+  background: #34495e;
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+  background: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+.team-container > div {
+  text-align: center;
+  max-width: 300px;
+  width: 100%;
+  padding: 10px;
+}
+
+.team-container img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-container p {
+  font-size: 1rem;
+  color: #333;
+  margin-top: 10px;
+}
+
+.team-container p + p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 5px;
+}
+
+.testimonials-section {
+  background: #f1f8f6;
+  padding: 40px;
+  text-align: center;
+}
+
+.testimonials-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.testimonials-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1 1 calc(60% - 40px);
+}
+
+.testimonial-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-card p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.testimonial-card span {
+  display: block;
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+.testimonial-card:nth-of-type(odd) {
+  background: #e8f5e9;
+}
+
+.testimonial-card:nth-of-type(even) {
+  background: #fff9c4;
+}
+
+.testimonial-card .author {
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+.testimonial-card .position {
+  font-size: 0.9rem;
+  color: #388e3c;
+}
+
+.about-footer {
+  text-align: center;
+  padding: 20px;
+  background: #2c3e50;
+  color: #ffffff;
+  border-top: 1px solid #ddd;
+  position: relative;
+  margin-top: 20px;
+}
+
+.about-footer p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 20px;
+  }
+
+  .about-section h2 {
+    font-size: 2rem;
+  }
+
+  .features-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .features-list li {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .team-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-container img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+  }
+
+  .subscribe-form input,
+  .subscribe-form button {
+    width: 100%;
+  }
+
+  .about-footer {
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+}
+
+.subscribe-success {
+  color: green;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
